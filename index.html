@@ -1,69 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Personal Profile</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 20px;
-		}
-		
-		.profile-picture {
-			border-radius: 50%;
-			width: 200px;
-			height: 200px;
-			margin: 20px;
-		}
-		
-		.interests {
-			margin-top: 20px;
-		}
-		
-		.social-media {
-			margin-top: 20px;
-		}
-		
-		.achievements {
-			margin-top: 20px;
-		}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANSTECH SRC Week 2025</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f4f8;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(120deg, #007bff, #6f42c1);
+      color: white;
+      padding: 60px 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+
+    .profile-photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      background-color: #343a40;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .grid-3x {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img,
+    .videos video {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    .notebook {
+      background: repeating-linear-gradient(white, white 28px, #d0ebff 29px);
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Patrick Hand', cursive, sans-serif;
+      line-height: 28px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: #ccc;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .profile-photo {
+        margin-top: 20px;
+        align-self: center;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-	<h1>About Me</h1>
-	<img src="123.joo.jpg" alt="Profile Picture" class="profile-picture">
-	<p>Hello, my name is Joseph Eshun and I am a Student. I am passionate about learning and exploring new things.</p>
-	
-	<h2>Interests</h2>
-	<div class="interests">
-		<ul>
-			<li>Playing online games</li>
-			<li>Dancing</li>
-			<li>Singing</li>
-		</ul>
-	</div>
-	
-	<h2>Hobbies</h2>
-	<div class="hobbies">
-		<ul>
-			<li>Writing songs</li>
-			<li>Playing Football</li>
-			<li>Playing Pool</li>
-		</ul>
-	</div>
-	
-	<h2>Achievements</h2>
-	<div class="achievements">
-		<ul>
-			<li>I'm now a designer</li>
-			<li>I'm a member of Catholic Church</li>
-			<li>I'm part of my school Football Team</li>
-		</ul>
-	</div>
-	
-	<h2>Reach out to</h2>
-	<div class="social-media">
-		<p>Email: <a href="mailto:your-">:tictomeshun1134@gmail.com</a></p>
-		<p>Contact:+233550735816</p>
-	</div>
+
+  <header>
+    <div class="hero-text">
+      <h1>ANSTECH SRC WEEK 2025</h1>
+      <p>✨ Empowering Youth • Celebrating Excellence ✨</p>
+    </div>
+    <img src="WhatsApp Image 2025-07-25 at 21.48.54_33a8ca6e.jpg" alt=" Joseph Eshun" class="profile-photo">
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#images">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#summary">Summary</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="card">
+    <h2>About SRC Week</h2>
+    <p>The SRC Week Celebration at Assin North Senior High Technical School (ANSTECH) is a cherished tradition that unites students through celebration, leadership, and community service.</p>
+    <p>With activities such as clean-ups, leadership seminars, cultural nights, and sports, it provides a platform for growth and unity.</p>
+    <p>Organized by the SRC and school staff, it fosters skills like event planning, teamwork, and self-expression—empowering future leaders.</p>
+  </section>
+
+  <section id="images" class="card">
+    <h2>📸 Highlights in Pictures</h2>
+    <div class="grid-3x gallery">
+      <figure><img src="nsmq-2021-regional-qualifiers.jpg" alt="Clean-Up" /><figcaption>Clean-Up</figcaption></figure>
+      <figure><img src="p 3.jpg" alt="Talent Show" /><figcaption>Talent Show</figcaption></figure>
+      <figure><img src="p 6.jpg" alt="Sports" /><figcaption>Sports</figcaption></figure>
+      <figure><img src="YOU.jpg" alt="Quiz" /><figcaption>Quiz</figcaption></figure>
+      <figure><img src="ajololo.jpeg" alt="Debate" /><figcaption>Debate</figcaption></figure>
+      <figure><img src="Womba1-scaled.jpg" alt="Thanksgiving" /><figcaption>Thanksgiving</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="videos" class="card">
+    <h2>🎥 Video Moments</h2>
+    <div class="grid-3x videos">
+      <video controls preload="none"><source src="anstech.mp4" type="video/mp4"></video>
+      <video controls preload="none"><source src="InShot_20250529_100744993.mp4" type="video/mp4"></video>
+      <video controls preload="none"><source src="kk 1.mp4" type="video/mp4"></video>
+      <video controls preload="none"><source src="src 2.mp4" type="video/mp4"></video>
+      <video controls preload="none"><source src="me.mp4" type="video/mp4"></video>
+      <video controls preload="none"><source src="you.mp4" type="video/mp4"></video>
+    </div>
+  </section>
+
+  <section id="schedule" class="card">
+    <h2>📅 Event Schedule</h2>
+    <ul>
+      <li><strong>Mon:</strong> Environmental Clean-Up</li>
+      <li><strong>Tue:</strong> Leadership Seminar + Talk Show</li>
+      <li><strong>Wed:</strong> Quiz & Debate</li>
+      <li><strong>Thu:</strong> Talent Show & Drama</li>
+      <li><strong>Fri:</strong> Sports & Inter-House Games</li>
+      <li><strong>Sat:</strong> Thanksgiving Service</li>
+    </ul>
+  </section>
+
+  <section id="summary" class="card">
+    <h2>📝 Summary</h2>
+    <div class="notebook">
+      The 2025 ANSTECH SRC Week Celebration was a powerful experience of culture, leadership, and togetherness. Over a thousand students took part in fun, educational, and impactful events.<br><br>
+      From clean-up campaigns to cultural night, the week left behind lasting memories and vital skills.<br><br>
+      <strong>ANSTECH stands tall</strong> as a beacon of unity and youth development.
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 ANSTECH SRC WEEK PROJECT </p>
+    <p>All Rights Reserved</p>
+    <p><strong>Website Owner:</strong> Joseph Eshun</p>
+    <p><strong>Phone:</strong> +233535513040</p>
+    <p><strong>Email:</strong>
+      <a href="mailto:tictomeshun1134@gmail.com">
+        📧 tictomeshun1134@gmail.com
+      </a>
+    </p>
+    <p><strong>Contact for Website Services:</strong> <a href="https://wa.me/+23355 073 5816"target="_blank">WhatsApp +23355 073 5816</a></p>
+    <p><strong>About the Developer:</strong><br>
+      Joseph Eshun is a passionate student developer from ANSTECH, with a love for technology and storytelling.<br><br>
+      <strong>Vision:</strong> Building educational platforms to empower Ghanaian students.<br><br>
+      <strong>Why This Project Matters:</strong> This website is a digital legacy that preserves ANSTECH’s student spirit for years to come.
+    </p>
+  </footer>
+
 </body>
 </html>
